@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-lg fixed-top fw-bold">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../assets/logo2.png" style="width: 60px;" alt="" srcset=""></a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #800080;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link hover-overlay" href="../destination/destination.html">Destinations</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="../inspiration/inspiration.html">Inspiration</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Travel Plans</a>
+                    </li>
+                    <form class="d-flex">
+                        <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #ffffff;"></i></button>
+                    </form>
+                </ul>
+                <div class="form-check form-switch justify-items-center">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- EndNavbar -->
+    <!-- Title -->
+    <section class="title">
+        <div class="top-0">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/gambar1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Makassar Wonders</h5>
+                            <p>"Menikmati keajaiban alam dan keindahan budaya yang memukau di bumi Makassar.”</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/gambar10.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/gambar3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- EndTitle -->
+    <!-- Promotions -->
+    <section class="promotions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-light mt-5 text-center">
+                    <h2>Promotions</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card hover-zoom mt-4 mb-4" style="
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        <img src="../assets/gambar1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body body-small text-light">
+                            <h5 class="card-title text-center">Polahi Advanture</h5>
+                            <p class="card-text text-hidden">Some quick example text to show the card zoom effect and
+                                text transition.</p>
+                            <a href="#" class="btn btn-primary btn-hidden justify-content-end">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hover-zoom mt-4 mb-4" style="
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        <img src="../assets/gambar1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body body-small text-light">
+                            <h5 class="card-title text-center pb-3">Makassar Trip</h5>
+                            <p class="card-text text-hidden">Some quick example text to show the card zoom effect and
+                                text transition.</p>
+                            <a href="#" class="btn btn-primary btn-hidden justify-content-end">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hover-zoom mt-4 mb-4" style="
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        <img src="../assets/gambar1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body body-small text-light">
+                            <h5 class="card-title text-center pb-3">Wonderfull Indonesia</h5>
+                            <p class="card-text text-hidden">Some quick example text to show the card zoom effect and
+                                text transition.</p>
+                            <a href="#" class="btn btn-primary btn-hidden justify-content-end">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hover-zoom mt-4 mb-4" style="
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        <img src="../assets/gambar1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body body-small text-light">
+                            <h5 class="card-title text-center pb-3">Card Title</h5>
+                            <p class="card-text text-hidden">Some quick example text to show the card zoom effect and
+                                text transition.</p>
+                            <a href="#" class="btn btn-primary btn-hidden justify-content-end">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hover-zoom mt-4 mb-4" style="
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        <img src="../assets/gambar1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body body-small text-light">
+                            <h5 class="card-title text-center pb-3">Card Title</h5>
+                            <p class="card-text text-hidden">Some quick example text to show the card zoom effect and
+                                text transition.</p>
+                            <a href="#" class="btn btn-primary btn-hidden justify-content-end">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card hover-zoom mt-4 mb-4" style="
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        <img src="../assets/gambar1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body body-small text-light">
+                            <h5 class="card-title text-center pb-3">Card Title</h5>
+                            <p class="card-text text-hidden">Some quick example text to show the card zoom effect and
+                                text transition.</p>
+                            <a href="#" class="btn btn-primary btn-hidden justify-content-end">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- EndPromotions -->
+
+    <!-- Footer -->
+    <section class="footer sticky-bottom bottom-0">
+        <div class="container  text-light">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="pb-3 pt-4"><img src="assets/logo2.png" alt="" style="width: 200px;" srcset=""></h2>
+                    <hr class="">
+                    <p>Situs ini merupakan situs resmi Kementerian Pariwisata dan Ekonomi Kreatif Provinsi Makassar.
+                        Semua isi yang tercantum di dalam situs ini bertujuan untuk memberikan informasi dan bukan
+                        sebagai tujuan komersial.
+                        Penjualan yang ditampilkan merupakan tanda kemitraan yang akan menghubungkan Anda kepada Mitra
+                        Kami.</p>
+                    <h4>Kelompok Makassar Wonders</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script> -->
+</body>
+
+</html>

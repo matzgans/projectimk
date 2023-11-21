@@ -1,0 +1,212 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(130%) contrast(90%);
+  -webkit-backdrop-filter: blur(5px) saturate(130%) contrast(90%);
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+/* homepage */
+.title {
+  background-color: #800080;
+}
+.galery {
+  background-color: purple;
+}
+.showmap {
+  background-color: #ffffff;
+}
+.contactus {
+  background-color: purple;
+}
+.footer {
+  background-color: #440044;
+}
+
+.card {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #007bff, #28a745) 1;
+}
+/* homepage */
+
+/* destinations */
+.list-destinations {
+  background-color: purple;
+}
+.popular-destinations {
+  background-color: #ffffff;
+}
+
+/* end destination */
+
+/* inspirations */
+/* travel st */
+.travel-story .image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.travel-story .image-container img {
+  width: 50%;
+  height: auto;
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+}
+
+.travel-story .image-container:hover img {
+  transform: scale(1.1);
+  filter: grayscale(100%) hue-rotate(270deg);
+}
+
+.travel-story .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.travel-story .image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+.travel-story {
+  background-color: purple;
+}
+.holiday-idea {
+  background-color: #ffffff;
+}
+
+/* end inspirations */
+
+/* Travel Plans */
+
+.hover-zoom {
+  transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+.card-text.text-hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease; /* Efek transisi untuk kemunculan deskripsi card */
+}
+
+.hover-zoom:hover .card-text.text-hidden {
+  opacity: 1;
+  height: auto;
+}
+
+.btn-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Efek transisi untuk kemunculan tombol */
+}
+
+.hover-zoom:hover .btn-hidden {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-body.body-small {
+  height: 40px; /* Atur tinggi card body saat belum di-hover */
+  overflow: hidden;
+  transition: height 1s ease; /* Efek transisi untuk tinggi card body */
+}
+
+.hover-zoom:hover .card-body.body-small {
+  height: auto; /* Atur tinggi card body saat di-hover menjadi auto */
+}
+
+/*  */
+.promotions {
+  background-color: purple;
+}
+
+.promotions .image-container {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+
+.promotions .image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+}
+
+.promotions .image-container:hover img {
+  transform: scale(1.1);
+  filter: grayscale(100%) hue-rotate(270deg);
+}
+
+.promotions .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.promotions .image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+/* end Travel Plans */
+
+/* stack */
+.galery .stack {
+  display: grid;
+  grid-template-areas: "stack";
+  width: 20rem;
+  height: 20rem;
+}
+.galery .stack > img {
+  grid-area: stack;
+}
+.galery .stack > img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 0.2);
+  border: solid 0.5rem white;
+  border-bottom: solid 2rem white;
+  border-radius: 0.5rem;
+  transition: transform 200ms;
+}
+.galery .stack > img:nth-child(1) {
+  transform: rotate(5deg) translateX(1.25rem) translateY(-1.25rem);
+}
+.galery .stack > img:nth-child(2) {
+  transform: rotate(-10deg) translateX(-1.25rem);
+}
+.galery .stack > img:nth-child(3) {
+  transform: rotate(0deg);
+}
+.galery .stack:hover > img:nth-child(1) {
+  transform: rotate(10deg) translateX(2.5rem) translateY(-2.5rem);
+}
+.galery .stack:hover > img:nth-child(2) {
+  transform: translateX(-3.75rem) rotate(-20deg);
+}
+.galery .stack:hover > img:nth-child(3) {
+  transform: rotate(0deg);
+}
+/* stack */
+
+/* search */
+.search {
+  background-color: #800080;
+}
