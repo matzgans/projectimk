@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" /> -->
+
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-lg fixed-top fw-bold">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../assets/logo2.png" style="width: 60px;" alt="" srcset=""></a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: #800080;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-2">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link hover-overlay" href="../destination/destination.html">Destinations</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="../inspiration/inspiration.html">Inspiration</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">Travel Plans</a>
+                    </li>
+                    <form class="d-flex">
+                        <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #d741d7; text-decoration: solid;"></i></button>
+                    </form>
+                </ul>
+                <div class="form-check form-switch justify-items-center">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- EndNavbar -->
+
+    <!-- search -->
+    <section class="detail_search">
+        <div class="container text-light pt-5 pb-5">
+            <div class="trans row pt-5 pb-5 mt-5 shadow-lg p-3">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center mb-3">
+                    <div class="embed-responsive embed-responsive-16by9 border-info border-3 shadow-lg">
+                        <iframe class="embed-responsive-item " width="500" height="450"
+                            src="https://www.youtube.com/embed/x0p3Fx8-y3Q" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                    <div class="text-center">
+                        <h2>Makassar Wonders</h2>
+                        <hr>
+                        <div class="d-flex flex-row justify-content-center">
+
+                            <div class="d-flex flex-column bd-highlight me-3 mb-3">
+                                <div class=""><button class="btn"><i
+                                            class="fa-regular fa-heart text-light"></i></button>
+                                </div>
+                                <div class="">18 M</div>
+                            </div>
+                            <div class="d-flex flex-column bd-highlight me-3 mb-3">
+                                <div class="bd-highlight">
+                                    <div class=""><button class="btn" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop"><i
+                                                class="fa-regular fa-comment-dots text-light"></i></button></div>
+                                </div>
+                                <div class="">24 M</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <div id='map' style="width: 600px;"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer sticky-bottom bottom-0">
+        <div class="container  text-light">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="pb-3 pt-4"><img src="../assets/logo2.png" alt="" style="width: 200px;" srcset=""></h2>
+                    <hr class="">
+                    <p>Situs ini merupakan situs resmi Kementerian Pariwisata dan Ekonomi Kreatif Provinsi Makassar.
+                        Semua isi yang tercantum di dalam situs ini bertujuan untuk memberikan informasi dan bukan
+                        sebagai tujuan komersial.
+                        Penjualan yang ditampilkan merupakan tanda kemitraan yang akan menghubungkan Anda kepada Mitra
+                        Kami.</p>
+                    <h4>Kelompok Makassar Wonders</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <!-- Modal for Reviw -->
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-light">
+                    <div class="row d-flex align-items-center mb-3">
+                        <div class="col-md-2 col-xs-2 mb-2"><img src="../assets/gambar6.jpg"
+                                style="height: 50px; width: 50px;" class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-8 col-xs-8 d-flex flex-column mb-2">
+                            <span class="fs-5">Azhar Tonkodu</span>
+                            <span>TourGuide <span>2 Bulan lalu</span></span>
+
+                        </div>
+                        <div class="col-md-2 col-xs-2 mb-2"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="col-md-12">
+                            <p>udara bersih krn ada dikawasan tepi hutan juga ada beberapa jenis tanaman produksi salah
+                                satunya kopi ( Arabica & Robusta )</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mb-3">
+                        <div class="col-md-2 mb-2"><img src="../assets/gambar5.jpg" style="height: 50px; width: 50px;"
+                                class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column mb-2">
+                            <span class="fs-5">Ara ara</span>
+                            <span>Orang biasa <span>1 Tahun lalu</span></span>
+
+                        </div>
+                        <div class="col-md-2 mb-2"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="col-md-12">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore minus ea quo tempora
+                                numquam aperiam, qui voluptas atque porro vero sint illo voluptatum odio fugiat cumque
+                                quas eaque! Deserunt, necessitatibus!</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mb-1">
+                        <div class="col-md-2 mb-2"><img src="../assets/gambar6.jpg" style="height: 50px; width: 50px;"
+                                class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column mb-2">
+                            <span class="fs-5">Agung Syahputra</span>
+                            <span>orang normal <span>6 Bulan lalu</span></span>
+
+                        </div>
+                        <div class="col-md-2 mb-2"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="col-md-12">
+                            <p>udara bersih krn ada dikawasan tepi hutan juga ada beberapa jenis tanaman produksi salah
+                                satunya kopi ( Arabica & Robusta )</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center mb-1">
+                        <div class="col-md-2 mb-2"><img src="../assets/gambar6.jpg" style="height: 50px; width: 50px;"
+                                class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column mb-2">
+                            <span class="fs-5">aini</span>
+                            <span>Petualangan <span>2 Tahun lalu</span></span>
+
+                        </div>
+                        <div class="col-md-2 mb-2"><i class="fas fa-ellipsis-v"></i></div>
+                        <div class="col-md-12">
+                            <p>udara bersih krn ada dikawasan tepi hutan juga ada beberapa jenis tanaman produksi salah
+                                satunya kopi ( Arabica & Robusta )</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal for Reviw -->
+    <!-- integrasi ke bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script> -->
+</body>
+
+</html>

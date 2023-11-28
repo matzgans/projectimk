@@ -33,7 +33,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item me-2">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" style="color: #d741d7; text-decoration: solid;"
+                            href="#">Home</a>
                     </li>
                     <li class="nav-item me-2">
                         <a class="nav-link hover-overlay" href="destination/destination.html">Destinations</a>
@@ -50,9 +51,7 @@
                     </form>
 
                 </ul>
-                <div class="form-check form-switch justify-items-center">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                </div>
+
             </div>
         </div>
     </nav>
@@ -115,39 +114,39 @@
         </svg> -->
         <div class="container pt-5">
             <div class="row">
-                <div class="col-md-12 col-xs-12 text-center text-light">
+                <div class="col-md-12 col-lg-12 col-xs-12 text-center text-light">
                     <h2 class="">Galery</h2>
                 </div>
             </div>
             <div class="row justify-content-center mb-4">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <hr class="bg-white" style="margin-bottom: 50px;">
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 d-flex justify-content-center mb-5">
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center mb-5">
                     <div class="stack" style="margin-bottom: 50px;">
                         <img src="assets/gambar5.jpg" alt="" srcset="">
                         <img src="assets/gambar3.jpg" alt="" srcset="">
                         <img src="assets/gambar9.jpg" alt="" srcset="">
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center mb-5">
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center mb-5">
                     <div class="stack" style="margin-bottom: 50px;">
                         <img src="assets/gambar7.jpg" alt="" srcset="">
                         <img src="assets/gambar9.jpg" alt="" srcset="">
                         <img src="assets/gambar2.jpg" alt="" srcset="">
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center mb-5">
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center mb-5">
                     <div class="stack" style="margin-bottom: 50px;">
                         <img src="assets/gambar3.jpg" alt="" srcset="">
                         <img src="assets/gambar1.jpg" alt="" srcset="">
                         <img src="assets/gambar7.jpg" alt="" srcset="">
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-center mb-5">
+                <div class="col-md-12 col-lg-6 d-flex justify-content-center mb-5">
                     <div class="stack" style="margin-bottom: 50px;">
                         <img src="assets/gambar1.jpg" alt="" srcset="">
                         <img src="assets/gambar2.jpg" alt="" srcset="">
@@ -179,7 +178,7 @@
 
                 </div>
             </div>
-            <div id="map" style="width: 100%; height: 700px;"></div>
+            <div id="map" class="border border-info" style="width: 100%; height: 700px;"></div>
         </div>
 
 
@@ -207,9 +206,9 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-lg-6 col-md-12 mb-3">
                             <div class="card text-light" style="background-color: #440044;">
-                                <div class="card-body">
+                                <div class="card-body pb-3">
 
                                     <form>
                                         <div class="mb-2">
@@ -227,20 +226,20 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1"
                                                 rows="3"></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-light rounded-pill px-3">Send</button>
+                                        <button type="submit" class="btn btn-light rounded-pill px-3 mb-2">Send</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-5">
+                        <div class="col-lg-6 col-md-12 mb-5">
                             <div class="card rounded-lg pb-4 text-light" style="background-color: #440044;">
-                                <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-                                        excepturi sed neque doloribus quas et nostrum. Dignissimos quibusdam id
-                                        ratione reiciendis fugit! Esse quisquam praesentium eligendi fugit
-                                        suscipit labore distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing
-                                        elit. Facere autem aliquid, ullam commodi eius illum quaerat nulla distinctio?
-                                        Libero architecto placeat.</p>
+                                <div class="card-body pb-1">
+                                    <p>Jangan ragu untuk menghubungi kami di Wonderful Makassar! Kami senang
+                                        mendengarkan setiap pertanyaan, menyambut setiap informasi yang ingin Anda
+                                        sampaikan, dan kami siap membantu Anda dengan sepenuh hati. Percayakan pada kami
+                                        untuk menghadirkan pengalaman yang tak terlupakan bagi Anda. Silakan jalin
+                                        kontak dengan tim kami, karena kami hadir untuk mengamankan momen berharga Anda
+                                        dengan layanan yang istimewa dan ramah.</p>
                                     <p><span class="me-2"><a href="#"><i class="fa-solid fa-phone"
                                                     style="color: #ffffff;"></i></a></span> +62354-424-52524</p>
                                     <p><span class="me-2"><a href="#"><i class="fa-brands fa-facebook"
@@ -281,9 +280,10 @@
     </section>
     <!-- End Footer -->
 
-    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
 
     <!-- js maps -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script>
         var map = L.map('map').setView([-5.161533014153815, 119.43483003755405], 13);
 
@@ -303,21 +303,23 @@
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         });
 
+
         var baseMaps = {
             "Satellite": satelliteLayer,
-            "Streets": streetsLayer
+            "Streets": streetsLayer,
         };
 
         L.control.layers(baseMaps).addTo(map);
         var marker = L.marker([-5.189845166502036, 119.37129467038488]).addTo(map);
-        marker.bindPopup("<b> Pantai Losari </b><br>Keindahan yang sangat cantik di pinggiran kota yang megah <br> <a class='btn btn-success text-white mt-2' onclick='alert(\"a clicked!\")'>Click me</a>").openPopup();
+        marker.bindPopup("<b> Pantai Losari </b><br>Keindahan yang sangat cantik di pinggiran kota yang megah <br> <a class='btn btn-success text-white mt-2' onclick='alert(\"a clicked!\")'>Direct to Navigation</a>").openPopup();
 
-        var marker = L.marker([-5.261815157182807, 119.52561856959683]).addTo(map);
-        marker.bindPopup("<b> Pantai Losari </b><br>Keindahan yang sangat cantik di pinggiran kota yang megah <br> <a class='btn btn-success text-white mt-2' onclick='alert(\"a clicked!\")'>Click me</a>").openPopup();
-        var marker = L.marker([-5.185179641345708, 119.42856838666954]).addTo(map);
-        marker.bindPopup("<b> Rumah Ara </b><br>Keindahan yang sangat cantik di pinggiran kota yang megah <br> <a class='btn btn-success text-white mt-2' onclick='alert(\"a clicked!\")'>Click me</a>").openPopup();
+        var marker = L.marker([-5.2102221957609585, 119.38747051898201]).addTo(map);
+        marker.bindPopup("<b>   Balla Lompoa </b><br>Rumah Adat Daerah Makassar <br> <a class='btn btn-success text-white mt-2' onclick='alert(\"a clicked!\")'>Direct to Navigation</a>").openPopup();
+        var marker = L.marker([-5.23433186951902, 119.52321610916631]).addTo(map);
+        marker.bindPopup("<b> Gowa Tourism Garden </b><br>Walks, Water Play, Seasonal Garden <br> <a class='btn btn-success text-white mt-2' onclick='alert(\"a clicked!\")'>Direct to Navigation</a>").openPopup();
     </script>
     <!-- end js maps -->
+    <!-- integrasi ke bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
